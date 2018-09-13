@@ -1,0 +1,57 @@
+kinit: KDC can't fulfill requested option while renewing credentials
+--------------------------------------------------------------------------
+An MPI process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your MPI job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.  
+
+The process that invoked fork was:
+
+  Local host:          psana1215 (PID 26811)
+  MPI_COMM_WORLD rank: 0
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+/reg/neh/home/qiaoshen/.conda/envs/my_ana-1.2.9/lib/python2.7/site-packages/loki/RingData/RadialProfile.py:69: RuntimeWarning: invalid value encountered in divide
+  self.num_pixels_per_radial_bin
+(200, 5040)
+cali_single_shots_10
+cali_single_shots_15
+cali_single_shots_20
+cali_single_shots_5
+interpolating original shots...
+done
+
+------------------------------------------------------------
+Sender: LSF System <lsf@psana1215.pcdsn>
+Subject: Job 822450: <python test_flatfield_solution.py 109 600 800> in cluster <slac> Done
+
+Job <python test_flatfield_solution.py 109 600 800> was submitted from host <psanagpu114.pcdsn> by user <qiaoshen> in cluster <slac> at Wed Jul  4 08:14:43 2018.
+Job was executed on host(s) <psana1215.pcdsn>, in queue <psanaq>, as user <qiaoshen> in cluster <slac> at Wed Jul  4 08:14:44 2018.
+</reg/neh/home/qiaoshen> was used as the home directory.
+</reg/neh/home/qiaoshen/run16_notebooks/flatfield> was used as the working directory.
+Started at Wed Jul  4 08:14:44 2018.
+Terminated at Wed Jul  4 08:32:18 2018.
+Results reported at Wed Jul  4 08:32:18 2018.
+Cannot open your job file: /reg/neh/home/qiaoshen/.lsbatch/1530717283.822450
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   282.54 sec.
+    Max Memory :                                 11305 MB
+    Average Memory :                             8625.16 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   5327 MB
+    Max Processes :                              3
+    Max Threads :                                15
+    Run time :                                   1053 sec.
+    Turnaround time :                            1055 sec.
+
+The output (if any) is above this job summary.
+
